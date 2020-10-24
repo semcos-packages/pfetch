@@ -1,0 +1,14 @@
+metadata:
+ - name: "pfetch"
+ - license: "MIT"
+ - description: "A pretty system information tool written in POSIX sh."
+ - source: "https://github.com/semcos-packages/pfetch"
+ - source-git: "true"
+ - vars: "PREFIX"
+ - build-depends-on: "make"
+
+build:
+ - type: "source"
+ - version: "0.6.0"
+ - steps:
+  - step: "make install"
